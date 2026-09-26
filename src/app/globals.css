@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Homeologic brand palette — matches homeo_frontend/src/index.css so this
+   prototype reads as a natural extension of the main product, not a
+   disconnected experiment. */
+@theme {
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-accent-dark: #8b5cf6;
+  --color-accent-light: #f5f3ff;
+  --color-accent-mid: #ede9fe;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-success: #059669;
+  --color-success-light: #ecfdf5;
+  --color-warning: #d97706;
+  --color-warning-light: #fffbeb;
+  --color-danger: #dc2626;
+  --color-danger-light: #fef2f2;
+  --color-info: #2563eb;
+  --color-info-light: #eff6ff;
+
+  --color-bg-light: #f4f2ff;
+  --color-card-light: #ffffff;
+  --color-sidebar-light: #ffffff;
+  --color-topbar-light: #ffffff;
+  --color-border-light: #ede9fe;
+  --color-text-light: #0f0f1a;
+  --color-text-sec-light: #6b7280;
+  --color-text-muted-light: #9ca3af;
+  --color-input-bg-light: #fafafa;
+  --color-input-border-light: #e5e7eb;
+  --color-hover-bg-light: #f5f3ff;
+  --color-divider-light: #ede9fe;
+  --color-table-head-light: #f9f8ff;
+
+  --radius-card: 16px;
+  --radius-input: 10px;
+  --radius-button: 10px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-light);
+  color: var(--color-text-light);
 }
