@@ -9,9 +9,6 @@ transcript → structured case fields → a diagnosis + repertorial chart with a
 remedy suggestion. Fully local: no API keys, no cloud calls, patient audio
 never leaves the machine.
 
-See [`PROBLEM_STATEMENT.md`](./PROBLEM_STATEMENT.md) for the pitch framing and
-[`PRD.md`](./PRD.md) for scope, architecture, and assumptions.
-
 ## Prerequisites
 
 - Node.js 20+ (this project was built against v22 via `nvm`)
